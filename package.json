@@ -20,6 +20,7 @@
   "homepage": "https://github.com/mzhaonanq/react-ui-1#readme",
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
+    "html-webpack-plugin": "^4.5.0",
     "webpack": "4.29.6",
     "webpack-cli": "3.2.3",
     "webpack-dev-server": "3.2.1"

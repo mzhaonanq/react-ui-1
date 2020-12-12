@@ -1,11 +1,10 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: "production",
-  entry: {
-    index: './lib/index.tsx'
-  },
+  entry: './lib/index.tsx',
   output:{
-    path: path.resolve(__dirname,'dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: "index.js"
   },
   module: {
@@ -15,6 +14,9 @@ module.exports = {
         loader: "awesome-typescript-loader",
         exclude: /node_modules/,
       }
-    ]
-  }
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({title: "React-UI", template: "./lib/index.html"}),
+  ],
 }
