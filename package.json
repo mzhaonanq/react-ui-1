@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/mzhaonanq/react-ui-1/issues"
   },
-  "homepage": "https://github.com/mzhaonanq/react-ui-1#readme"
+  "homepage": "https://github.com/mzhaonanq/react-ui-1#readme",
+  "devDependencies": {
+    "webpack": "4.29.6",
+    "webpack-cli": "3.2.3"
+  }
 }
