@@ -7,6 +7,9 @@
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+//    "esModuleInterop": true, 用来代替 "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "dist",
   }
 }
