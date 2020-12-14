@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDoM from 'react-dom';
-import {Button} from './Button';
+import {Icon} from './Icon';
 
 ReactDoM.render(
-  <Button/>,
+  <Icon name="left"/>,
   document.getElementById('root')
 )
