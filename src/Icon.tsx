@@ -5,11 +5,12 @@ try {importAll(require.context('./', true, /\.svg$/));} catch (error) {console.l
 
 type Props = {
   name?: string
+  onClick: React.MouseEventHandler<SVGElement>
 }
 const Icon: React.FunctionComponent<Props> = (props) => {
   return (
     <div>
-      <svg className="ui-icon">
+      <svg className="ui-icon" onClick={props.onClick}>
         <use xlinkHref={`#${props.name}`}/>
       </svg>
     </div>
