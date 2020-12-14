@@ -4,7 +4,6 @@ import {Icon} from './Icon';
 
 const onClick2 = (event: React.MouseEvent<SVGElement | SVGUseElement>) => {
   console.log(event.target);
-  console.log((event.target as SVGUseElement).href);
 };
 
 ReactDoM.render(

@@ -3,14 +3,14 @@ import './icon.scss'
 let importAll = (requireContext: __WebpackModuleApi.RequireContext) => requireContext.keys().forEach(requireContext);
 try {importAll(require.context('./', true, /\.svg$/));} catch (error) {console.log(error);}
 
-type Props = {
+interface Props extends React.SVGAttributes<SVGElement>{
   name?: string
-  onClick: React.MouseEventHandler<SVGElement>
 }
 const Icon: React.FunctionComponent<Props> = (props) => {
+  const {className,...rest}=props
   return (
     <div>
-      <svg className="ui-icon" onClick={props.onClick}>
+      <svg className="ui-icon" {...rest}>
         <use xlinkHref={`#${props.name}`}/>
       </svg>
     </div>
