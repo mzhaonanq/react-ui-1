@@ -9,8 +9,7 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
 //    "esModuleInterop": true, 用来代替 "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationDir": "dist",
-    "include": ["src","src/custom.d.ts"],
+    "declaration": false,
+//    "declarationDir": "dist",
   }
 }

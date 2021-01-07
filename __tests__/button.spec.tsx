@@ -1,4 +1,4 @@
-import {Button} from '../src/Button';
+import {Button} from '../src/Components/Button';
 import * as renderer from 'react-test-renderer'
 import * as React from 'react';
 describe("number test", ()=>{

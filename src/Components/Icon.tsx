@@ -1,6 +1,6 @@
 import React from 'react';
-import './icon.scss'
-import {classnames} from './helpers/classnames';
+import './style/icon.scss'
+import {classnames} from '../lib/helpers';
 let importAll = (requireContext: __WebpackModuleApi.RequireContext) => requireContext.keys().forEach(requireContext);
 try {importAll(require.context('./', true, /\.svg$/));} catch (error) {console.log(error);}
 

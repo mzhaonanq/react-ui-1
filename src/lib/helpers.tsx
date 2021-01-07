@@ -1,4 +1,4 @@
 const classnames = (...names: (string | undefined)[]) => {
-  return names.filter(v => v).join(' ');
+  return names.filter(Boolean).join(' ');
 };
 export {classnames};
